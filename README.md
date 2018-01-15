@@ -1,12 +1,12 @@
-# <img src="https://www.holbertonschool.com/assets/holberton-logo-simplified-71b02868461c07d54553e4a7cc05d1926681a6755cc19030b0458f2d70ae9909.png" width="30"> AirBnB Clone V.3 - RESTful API
+# <img src="https://www.holbertonschool.com/assets/holberton-logo-simplified-71b02868461c07d54553e4a7cc05d1926681a6755cc19030b0458f2d70ae9909.png" width="30"> AirBnB Clone V.4 - Web dynamic
 
 ## Synopsis
-This is the 3rd version of our AirBnB clone project. We will be using a REST API and Flask
+This is the 4th version of our AirBnB clone project. We are adding JQuery.
 
 <p><img src="https://s3.amazonaws.com/intranet-projects-files/concepts/74/hbnb_step2.png" alt="step2"></p>
 
 ## Table of Contents
-* [Environment](#environment)
+* [Requirements](#requirements)
 * [Installation](#installation)
 * [File Descriptions](#file-descriptions)
 * [Usage](#usage)
@@ -15,8 +15,11 @@ This is the 3rd version of our AirBnB clone project. We will be using a REST API
 * [Authors](#authors)
 * [License](#license)
 
-## Environment
-This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.4.3)
+## Requirements
+This project is interpreted/tested on:
+* Ubuntu (v14.04 LTS)
+* python3 (v3.4.3)
+* JQuery (v3.2.1)
 
 ## Installation
 * Run hbnb(interactively): `./console` and enter command
@@ -54,7 +57,7 @@ Classes inherited from Base Model:
 * `def all(self)` - returns the dictionary __objects
 * `def new(self, obj)` - sets in __objects the obj with key <obj class name>.id
 * `def save(self)` - serializes __objects to the JSON file (path: __file_path)
-* ` def reload(self)` -  deserializes the JSON file to __objects
+* `def reload(self)` -  deserializes the JSON file to __objects
 
 #### `/tests` directory contains all unit test cases for this project:
 [/test_models/test_base_model.py](/tests/test_models/test_base_model.py) - Contains the TestBaseModel and TestBaseModelDocs classes
@@ -150,6 +153,11 @@ No known bugs at this time.
 
 ## Authors
 
+###### Version 4
+
+- Anoop Marcharla - [Github](https:/github.com/amacharla) / [Twitter](https://twitter.com/noop_lion)  
+- Felicia Hsieh - [Github](https://github.com/feliciahsieh) / [Twitter](https://twitter.com/feliciahsiehsw)
+
 ###### Version 3
 
 - Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
@@ -166,4 +174,4 @@ No known bugs at this time.
 - Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
 
 ## License
-Public Domain. No copywrite protection. 
+Public Domain. No copywrite protection.
