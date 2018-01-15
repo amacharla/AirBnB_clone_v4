@@ -21,6 +21,9 @@ This project is interpreted/tested on:
 * python3 (v3.4.3)
 * JQuery (v3.2.1)
 
+* If you are using Vagrant, allow port 5050 with the following configuration.
+`config.vm.network :forwarded_port, guest: 5000, host: 5050 # I expose the port 5000 of my vm to the port 5050 on my computer`
+
 ## Installation
 * Run hbnb(interactively): `./console` and enter command
 * Run hbnb(non-interactively): `echo "<command>" | ./console.py`
