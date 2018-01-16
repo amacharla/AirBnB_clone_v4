@@ -27,9 +27,9 @@
             <li>
               <h2>{{ state.name }}</h2>
               <ul>
-	      {% for city in state.cities|sort(attribute='name') %}
+		{% for city in state.cities|sort(attribute='name') %}
                 <li>{{ city.name }}</li>
-	      {% endfor %}
+		{% endfor %}
               </ul>
             </li>
 	    {%- endfor %}
@@ -40,10 +40,10 @@
           <h4>&nbsp;</h4>
           <ul class="popover">
 	    {% for amty in amenities.values() %}
-      <li>
-        <INPUT type="checkbox" data-id="{{ amty.id }}" data-name="{{ amty.name }}" style="margin-right: 10px">
-        {{ amty.name }}
-      </li>
+	    <li>
+              <INPUT type="checkbox" data-id="{{ amty.id }}" data-name="{{ amty.name }}" style="margin-right: 10px">
+              {{ amty.name }}
+	    </li>
 	    {% endfor %}
           </ul>
 	</div>
