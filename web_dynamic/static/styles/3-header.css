@@ -14,13 +14,17 @@ header {
     padding-left: 20px;
 }
 
+#api_status.available {
+  background-color: #FF545F;
+}
+
 #api_status {
+  height: 35px;
+  width: 35px;
   align-items: right;
   border-radius: 40px;
   margin-right: 30px;
+  margin-left: 86%;
   background-color: #CCCCCC;
 }
 
-.available {
-  background-color: #FF545F;
-}
