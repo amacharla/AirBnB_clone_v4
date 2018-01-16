@@ -91,3 +91,9 @@ section.filters > button:hover {
     margin-left: 50px;
     margin-bottom: 10px;
 }
+
+.amenities h4 {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
