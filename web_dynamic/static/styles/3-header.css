@@ -4,6 +4,7 @@ header {
     height: 70px;
     border-bottom: 1px solid #CCCCCC;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -21,10 +22,8 @@ header {
 #api_status {
   height: 35px;
   width: 35px;
-  align-items: right;
   border-radius: 40px;
   margin-right: 30px;
-  margin-left: 86%;
   background-color: #CCCCCC;
 }
 
