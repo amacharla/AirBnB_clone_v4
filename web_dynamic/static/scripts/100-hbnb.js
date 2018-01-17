@@ -21,8 +21,7 @@ $(document).ready(function () {
         delete stateFilter[$(this).attr('data-id')];
         delete cityFilter[$(this).attr('data-id')];
       }
-      $('div.locations h4').text(Object.values(stateFilter) +
-        (stateFilter.length > 0) ? ',' : '' + Object.values(cityFilter));
+      $('div.locations h4').text((stateFilter.length > 0) ? Object.values(cityFilter) : Object.values(stateFilter) + ',' + Object.values(cityFilter));
     });
 
   $('section.filters button').click(function () {
