@@ -43,6 +43,9 @@ section.filters > button:hover {
     font-weight: 400;
     font-size: 14px;
     margin: 0 0 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .popover {
@@ -90,10 +93,4 @@ section.filters > button:hover {
 .amenities > .popover > li {
     margin-left: 50px;
     margin-bottom: 10px;
-}
-
-.amenities h4 {
-   white-space: nowrap;
-   overflow: hidden;
-   text-overflow: ellipsis;
 }
