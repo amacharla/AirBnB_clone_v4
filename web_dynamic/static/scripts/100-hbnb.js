@@ -21,7 +21,7 @@ $(document).ready(function () {
         delete stateFilter[$(this).attr('data-id')];
         delete cityFilter[$(this).attr('data-id')];
       }
-      $('div.locations h4').text(Object.values(stateFilter));
+      $('div.locations h4').text(Object.values(stateFilter + cityFilter));
     });
 
   $('section.filters button').click(function () {
