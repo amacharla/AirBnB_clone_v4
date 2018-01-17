@@ -24,9 +24,8 @@ $(document).ready(function () {
     data: '{}'
   }).done(function (data) {
     $('SECTION.places').html('<h1>Places</h1>');
-    data.map(place => {
-    $('SECTION.places').append(
-      '<article>' +
+    for (let place in data) {
+      $('<article></article>').html(
         '<h2>' + place.name + '</h2>' +
             '<div class="price_by_night">' +
               '<p>' + place.price_by_night + '</p>' +
@@ -49,9 +48,8 @@ $(document).ready(function () {
             '</div>' +
             '<div class="description">' +
               '<p>' + place.description + '</p>' +
-            '</div>'+
-      '</article>'
-    );
-    });
+            '</div>'
+      ).appendTo('<h1>Places</h1>');
+    }
   });
 });
