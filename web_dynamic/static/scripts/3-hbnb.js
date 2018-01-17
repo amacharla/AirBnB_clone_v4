@@ -29,7 +29,7 @@ $(document).ready(function () {
       '<article>' +
         '<h2>' + place.name + '</h2>' +
             '<div class="price_by_night">' +
-              '<p>' + place.price_by_night + '</p>' +
+              '<p>$' + place.price_by_night + '</p>' +
             '</div>' +
             '<div class="information">' +
               '<div class="max_guest">' +
