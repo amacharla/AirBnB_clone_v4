@@ -1,10 +1,10 @@
 $(document).ready(function () {
-  let amenityFilter = [];
+  let amenityFilter = {};
   $('div.amenities input:checkbox').change(
     function () {
       if ($(this).is(':checked')) {
-        amenityFilter.push(' ' + $(this).attr('data-name'));
-      } else amenityFilter.pop(' ' + $(this).attr('data-name'));
-      $('div.amenities h4').text(amenityFilter);
+        amenityFilter[$(this).attr('data-id')] = ' ' + $(this).attr('data-name');
+      } else  delete amenityFilter[$(this).attr('data-id')];
+      $('div.amenities h4').text(Object.values(amenityFilter));
     });
 });

@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  let amenityFilter = [];
+  let amenityFilter = {};
   $('div.amenities input:checkbox').change(
     function () {
       if ($(this).is(':checked')) {
