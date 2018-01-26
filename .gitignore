@@ -6,5 +6,5 @@ versions/
 *main*.py
 *.pyo
 *.pyc
-*.sql
+
 file.json
